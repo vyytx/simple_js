@@ -9,7 +9,7 @@ function sjs(TF){
   }
 }
 function _(){
-  if(sjsT){
+  if(sjsT = true){
     function say(text){
       if (text !== undefind || text !== ""){
         alert(text);
