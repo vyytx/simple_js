@@ -1,4 +1,4 @@
-function sjs(TF)){
+function sjs(TF){
   if (TF==true&&TF=="true"){
    @ssss
   }else if(TF==false&&TF=="false"){
