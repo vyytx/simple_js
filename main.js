@@ -1,14 +1,21 @@
+var sjsT = false;
 function sjs(TF){
   if (TF==true&&TF=="true"){
-   @();
+    sjsT = true;
   }else if(TF==false&&TF=="false"){
-    alert('You need to make it "true" to enable "Simple Javascript"');
+    alert('你需要把它設為"true"來啟動"Simple Javascript"');
   }else{
-    alert('The currect instruction is "sjs(true/false)"')
+    alert('正確的使用方法為 "sjs(true/false)"')
   }
 }
-function @(){
-  function say(text){
-    alert(text);
+function _(){
+  if(sjsT){
+    function say(text){
+      if (text !== undefind || text !== ""){
+        alert(text);
+      }else{
+        alert('正確的使用方法為 "say(文字)"')
+      }
+    }
   }
 }
