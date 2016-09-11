@@ -1,5 +1,5 @@
 var sjConf ={
-  sjSet : function(lang){if(lang == "en-us"){this.sjLang="en-us"; this.sjCU="The correct instruction is "; this.sjStr="String"; this.sjNum="Number"; this.sjBol="Boolean";}else if(lang == "zh-tw"){this.sjLang="zh-tw"; this.sjCU="正確的使用方式是 "; this.sjStr="字串"; this.sjNum="數字"; this.sjBol="布林值";}}
+  sjSet : function(lang){if(lang == "en-us"){this.sjLang="en-us"; this.sjCU="The correct instruction is "; this.sjStr="String"; this.sjNum="Number"; this.sjBol="Boolean";}else if(lang == "zh-tw"){this.sjLang="zh-tw"; this.sjCU="正確的使用方式是 "; this.sjStr="字串"; this.sjNum="數字"; this.sjBol="布林值";}},
   sjLang : "en-us",
   sjCU : "",
   sjStr : "",
