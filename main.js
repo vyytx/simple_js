@@ -5,5 +5,8 @@ imported2.src = 'https://vyytx.github.io/simple_js/sj.js';
 document.head.appendChild(imported1);
 document.head.appendChild(imported2);
 
+var sj_para = document.createElement("sjr");
+var sj_node = document.createTextNode("Powered by SimpleJS");
+sj_para.appendChild(sj_node);
 var sj_body = document.getElementsByName("body"); 
-sj_body.appendChild(document.createElement("sjr").appendChild(document.createTextNode("Powered by SimpleJS")));
+sj_body.appendChild(sj_para);
