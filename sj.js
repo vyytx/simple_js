@@ -12,5 +12,3 @@ var sj = {
   question: function(text){if(text !== "help"){prompt(text);}else{alert('正確的使用方法為 "sj.question(文字);"')}},
   textNum: function(text){if(text !== help){return text/1}else{alert('正確的使用方法為 "sj.textNum(文字);"')}}
 }
-
-setTimeout($("body").append("<sjr>Powered by SimpleJS</sjr>"), 1000);
