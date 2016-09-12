@@ -10,4 +10,4 @@ var sj_node = document.createTextNode("Powered by SimpleJS");
 sj_para.appendChild(sj_node);
 var sj_body = document.getElementsByTagName("body"); 
 setTimeout(11);
-sj_body.appendChild(sj_para[0]);
+sj_body[0].appendChild(sj_para);
