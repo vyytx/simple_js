@@ -9,7 +9,7 @@ var SJ ={
 
 document.body.appendChild(document.createElement('br'));
 document.body.appendChild(document.createElement('sb'));
-document.body.appendChild(document.createElement('sbimg');
+document.body.appendChild(document.createElement('sbimg'));
 
 document.getElementsByTagName("sbimg")[0].id = "sbimg";
 document.getElementById("sbimg").src("https://vyytx.github.io/simple_js/img.png");
