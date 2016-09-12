@@ -7,6 +7,8 @@ var sjConf ={
   sjBol : ""
 }
 
+$("body").append("<pb style=''>Power by SimpleJS</pb>")
+
 var sj = {
   say: function(text){if(text !== "help"){alert(text);}else{alert(SJ.sjCU + '"sj.say(' + SJ.sjStr + '/' + SJ.sjNum +'/' + SJ.sjBol + ');"' )}},
   question: function(text){if(text !== "help"){prompt(text);}else{alert('正確的使用方法為 "sj.question(文字);"')}},
