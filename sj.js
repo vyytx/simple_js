@@ -11,7 +11,7 @@ document.body.appendChild(document.createElement('br'));
 document.body.appendChild(document.createElement('sb'));
 document.getElementsByTagName("sb")[0].id = "sb";
 document.getElementById("sb").appendChild(document.createTextNode("Powered by SimpleJS"));
-document.getElementById("sb").style = "text-align: center; font-size: 20px;";
+document.getElementById("sb").style = "text-align: center; display: block; margin: 0 auto; font-size: 20px;";
 
 var sj = {
   say: function(text){if(text !== "help"){alert(text);}else{alert(SJ.sjCU + '"sj.say(' + SJ.sjStr + '/' + SJ.sjNum +'/' + SJ.sjBol + ');"' )}},
