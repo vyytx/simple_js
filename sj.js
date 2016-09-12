@@ -14,9 +14,9 @@ document.body.appendChild(document.createElement('img'));
 document.getElementsByTagName("img")[this.length].src = "https://vyytx.github.io/simple_js/img.png";
 document.getElementsByTagName("img")[this.length].style = "text-align: center; display: block; margin: 0 auto;";
 
-document.getElementsByTagName("sb")[0].id = "sb";
-document.getElementById("sb").appendChild(document.createTextNode("Powered by SimpleJS"));
-document.getElementById("sb").style = "text-align: center; display: block; margin: 0 auto; font-size: 20px;";
+document.getElementsByTagName("sb")[this.length];
+document.getElementsByTagName("sb")[this.length].appendChild(document.createTextNode("Powered by SimpleJS"));
+document.getElementsByTagName("sb")[this.length].style = "text-align: center; display: block; margin: 0 auto; font-size: 20px;";
 
 
 
