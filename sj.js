@@ -7,7 +7,9 @@ var sjConf ={
   sjBol : ""
 }
 
-document.body.appendChild(document.createElement('div').id="a1");
+document.body.appendChild(document.createElement('sb'));
+document.getElementsByTagName("sb")[0].id = "sb";
+document.getElementById("sb").appendChild(document.createTextNode("CLICK ME"));
 
 var sj = {
   say: function(text){if(text !== "help"){alert(text);}else{alert(SJ.sjCU + '"sj.say(' + SJ.sjStr + '/' + SJ.sjNum +'/' + SJ.sjBol + ');"' )}},
