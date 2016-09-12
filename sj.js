@@ -11,7 +11,8 @@ document.body.appendChild(document.createElement('br'));
 document.body.appendChild(document.createElement('sb'));
 document.body.appendChild(document.createElement('img'));
 
-document.getElementsByTagName("img")[document.getElementsByTagName("img").length - 1].src("https://vyytx.github.io/simple_js/img.png");
+var ___oo___ = document.getElementsByTagName("img").length - 1;
+document.getElementsByTagName("img")[___oo___].src("https://vyytx.github.io/simple_js/img.png");
 document.getElementById("sbimg").style = "text-align: center; display: block; margin: 0 auto;";
 
 document.getElementsByTagName("sb")[0].id = "sb";
