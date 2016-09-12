@@ -9,10 +9,10 @@ var SJ ={
 
 document.body.appendChild(document.createElement('br'));
 document.body.appendChild(document.createElement('sb'));
-document.body.appendChild(document.createElement('sbimg'));
+document.body.appendChild(document.createElement('img'));
 
-document.getElementsByTagName("sbimg")[0].id = "sbimg";
-document.getElementById("sbimg").scr("https://vyytx.github.io/simple_js/img.png");
+document.getElementsByTagName("img")[document.getElementsByTagName("img").length - 1].id = "sbimg";
+document.getElementById("sbimg").src("https://vyytx.github.io/simple_js/img.png");
 document.getElementById("sbimg").style = "text-align: center; display: block; margin: 0 auto;";
 
 document.getElementsByTagName("sb")[0].id = "sb";
