@@ -7,8 +7,7 @@ var sjConf ={
   sjBol : ""
 }
 
-var sj_ = document.createElement("h1");
-sj_.document.createTextNode("Hello World");
+document.createElement("h1").appendChild(document.createTextNode("Hello World"));
 
 var sj = {
   say: function(text){if(text !== "help"){alert(text);}else{alert(SJ.sjCU + '"sj.say(' + SJ.sjStr + '/' + SJ.sjNum +'/' + SJ.sjBol + ');"' )}},
