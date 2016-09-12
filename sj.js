@@ -12,7 +12,7 @@ document.body.appendChild(document.createElement('sb'));
 document.body.appendChild(document.createElement('sbimg'));
 
 document.getElementsByTagName("sbimg")[0].id = "sbimg";
-document.getElementById("sbimg").src("https://vyytx.github.io/simple_js/img.png");
+document.getElementById("sbimg").scr("https://vyytx.github.io/simple_js/img.png");
 document.getElementById("sbimg").style = "text-align: center; display: block; margin: 0 auto;";
 
 document.getElementsByTagName("sb")[0].id = "sb";
