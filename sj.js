@@ -12,7 +12,7 @@ document.body.appendChild(document.createElement('sb'));
 document.body.appendChild(document.createElement('img'));
 
 document.getElementsByTagName("img")[this.length].src = "https://vyytx.github.io/simple_js/img.png";
-document.getElementById("sbimg").style = "text-align: center; display: block; margin: 0 auto;";
+document.getElementsByTagName("img")[this.length].style = "text-align: center; display: block; margin: 0 auto;";
 
 document.getElementsByTagName("sb")[0].id = "sb";
 document.getElementById("sb").appendChild(document.createTextNode("Powered by SimpleJS"));
