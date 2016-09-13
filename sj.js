@@ -14,7 +14,7 @@ var SJ ={
   sjsba: "here."
 }
 
-$("body").html("<div class='SJsb'><sb>" + SJ.sjsb1 + "</sb></div>" + $("body").html());
+$("body").html("<div id='SJsb'><sb>" + SJ.sjsb1 + "</sb></div>" + $("body").html());
 $("#SJsb").append("<br>");
 $("#SJsb").append(SJ.sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
 
