@@ -16,7 +16,7 @@ var SJ ={
 
 $("body").html("<div class='SJsb'><sb>" + SJ.sj00 + "</sb></div>" + $("body").html());
 $("#SJsb").append("<br>");
-$("#SJsb").append(sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
+$("#SJsb").append(SJ.sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
 
 var sj = {
   say: function(text){if(text !== "help"){alert(text);}else{alert(SJ.sjCU + '"sj.say(' + SJ.sjStr + '/' + SJ.sjNum +'/' + SJ.sjBol + ');"' )}},
