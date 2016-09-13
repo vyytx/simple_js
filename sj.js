@@ -5,12 +5,12 @@ if(e&&1===a.nodeType)while(c=e[d++])a.removeAttribute(c)}}),hb={set:function(a,b
 var SJ ={
   sjSet : function(lang){if(lang == "en-us"){this.sjLang="en-us"; this.sjCU="The correct instruction is "; this.sjStr="String"; this.sjNum="Number"; this.sjBol="Boolean";}else if(lang == "zh-tw"){this.sjLang="zh-tw"; this.sjCU="正確的使用方式是 "; this.sjStr="字串"; this.sjNum="數字"; this.sjBol="布林值";}},
   sjLang: "en-us",
-  sjCU: "",
-  sjStr: "",
-  sjNum: "",
-  sjBol: "",
+  sjCU: "The correct instruction is ",
+  sjStr: "String",
+  sjNum: "Number",
+  sjBol: "Boolean",
   sjsb1: "This website is powered by SimpleJS.",
-  sjsb2: "You can get SimpleJS",
+  sjsb2: "You can get SimpleJS ",
   sjsba: "here."
 }
 
@@ -20,6 +20,6 @@ $("#SJsb").append(SJ.sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
 
 var sj = {
   say: function(text){if(text !== "help"){alert(text);}else{alert(SJ.sjCU + '"sj.say(' + SJ.sjStr + '/' + SJ.sjNum +'/' + SJ.sjBol + ');"' )}},
-  question: function(text){if(text !== "help"){prompt(text);}else{alert('正確的使用方法為 "sj.question(文字);"')}},
-  textNum: function(text){if(text !== "help"){return text/1}else{alert('正確的使用方法為 "sj.textNum(文字);"')}}
+  question: function(text){if(text !== "help"){prompt(text);}else{alert(SJ.sjCU + '"sj.question(' + SJ.sjStr + ');"')}},
+  textNum: function(text){if(text !== "help"){return text/1}else{alert(SJ.sjCU + '"sj.textNum(' + SJ.sjStr + ');"')}}
 }
