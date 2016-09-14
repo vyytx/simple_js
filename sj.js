@@ -19,7 +19,7 @@ $("#SJsb").append("<br>");
 $("#SJsb").append(SJ.sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
 
 var sj = {
-  say: function(text){if(text !== "help"){alert(text);}else{alert(SJ.sjCU + '"sj.say(' + SJ.sjStr + '/' + SJ.sjNum +'/' + SJ.sjBol + ');"' )}},
-  question: function(text){if(text !== "help"){prompt(text);}else{alert(SJ.sjCU + '"sj.question(' + SJ.sjStr + ');"')}},
-  textNum: function(text){if(text !== "help"){return text/1}else{alert(SJ.sjCU + '"sj.textNum(' + SJ.sjStr + ');"')}}
+  say: function(text){if(text !== "!help"){alert(text);}else{alert(SJ.sjCU + '"sj.say(' + SJ.sjStr + '/' + SJ.sjNum +'/' + SJ.sjBol + ');"' )}},
+  question: function(text){if(text !== "!help"){prompt(text);}else{alert(SJ.sjCU + '"sj.question(' + SJ.sjStr + ');"')}},
+  textNum: function(text){if(text !== "!help"){return text/1}else{alert(SJ.sjCU + '"sj.textNum(' + SJ.sjStr + ');"')}}
 }
