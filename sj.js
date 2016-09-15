@@ -23,6 +23,7 @@ function sjSet(langu, IsBS){
     if(___ii != true){
       onloadSJ(1);
     }else if(___ii == true){
+      $("#SJModal").remove();
       $("body").append(
     
         <!-- Modal -->
@@ -47,6 +48,7 @@ function sjSet(langu, IsBS){
           </div>
         </div>
       )
+      $("#SJModal").modal.show();
     }else if(___i == "zh_TW"){
       SJ.sjLang="zh_TW";
       SJ.sjCU="正確的使用方式是 ";
@@ -57,6 +59,7 @@ function sjSet(langu, IsBS){
         if(___ii != true){
           onloadSJ(1);
         }else if(___ii == true){
+          $("#SJModal").remove();
           $("body").append(
       
             <!-- Modal -->
@@ -82,6 +85,7 @@ function sjSet(langu, IsBS){
             </div>
       
           )
+          $("#SJModal").modal.show;
         }
       }
     }
