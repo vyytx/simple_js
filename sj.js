@@ -7,10 +7,7 @@ var SJ={
   sjCU: "The correct instruction is ",
   sjStr: "String",
   sjNum: "Number",
-  sjBol: "Boolean",
-  sjsb1: "This website is powered by SimpleJS.",
-  sjsb2: "You can get SimpleJS ",
-  sjsba: "here."
+  sjBol: "Boolean"
 }
 
 function sjSet(langu){
@@ -21,32 +18,26 @@ function sjSet(langu){
     SJ.sjStr="String"; 
     SJ.sjNum="Number";
     SJ.sjBol="Boolean";
-    SJ.sjsb1="This website is powered by SimpleJS.",
-    SJ.sjsb2="You can get SimpleJS ",
-    SJ.sjsba="here."
   }else if(___i == "zh_TW"){
     SJ.sjLang="zh_TW";
     SJ.sjCU="正確的使用方式是 ";
     SJ.sjStr="字串";
     SJ.sjNum="數字";
     SJ.sjBol="布林值";
-    SJ.sjsb1="這個網站使用了SimpleJS",
-    SJ.sjsb2='您可以點擊下方的 " 連結 " 來下載',
-    SJ.sjsba="SimpleJS."
   }
   onloadSJ(1);
 }
 
 function onloadSJ(text){
   if(text!=1){
-    $("body").html("<div id='SJsb'><sb>" + SJ.sjsb1 + "</sb></div>" + $("body").html());
+    $("body").html("<div id='SJsb'><h2>This website is Powered by SimpleJS.</h2></div>" + $("body").html());
     $("#SJsb").append("<br>");
-    $("#SJsb").append(SJ.sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
+    $("#SJsb").append("<h2>You can get SimpleJS <a href='#'>here</a> .</h2>");
   }else{
     $("#SJsb").first().remove();
-    $("body").html("<div id='SJsb'><sb>" + SJ.sjsb1 + "</sb></div>" + $("body").html());
+    $("body").html("<div id='SJsb'><h2>這個網站使用了SimpleJS,</h2></div>" + $("body").html());
     $("#SJsb").append("<br>");
-    $("#SJsb").append(SJ.sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
+    $("#SJsb").append("<h2>您可以點擊<a href='#'>這裡</a>來下載SimpleJS</h2>");
   }
 }
 
