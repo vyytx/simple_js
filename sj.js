@@ -36,11 +36,12 @@ function onloadSJ(text){
     $("#SJsb").append("<br>");
     $("#SJsb").append(SJ.sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
   }else{
-    document.getElementById("SJsb").class="SJsbClear";
+    var oooo = $("#SJsb").first();
+    oooo.id="SJsbC";
     $("body").html("<div id='SJsb'><sb>" + SJ.sjsb1 + "</sb></div>" + $("body").html());
     $("#SJsb").append("<br>");
     $("#SJsb").append(SJ.sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
-    $(".SJsbClear").remove();
+    $("#SJsbC").remove();
   }
 }
 
