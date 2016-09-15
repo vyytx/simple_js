@@ -21,18 +21,18 @@ function sjSet(langu){
     SJ.sjStr="String"; 
     SJ.sjNum="Number";
     SJ.sjBol="Boolean";
-    SJ.sjsb1: "This website is powered by SimpleJS.",
-    SJ.sjsb2: "You can get SimpleJS ",
-    SJ.sjsba: "here."
+    SJ.sjsb1="This website is powered by SimpleJS.",
+    SJ.sjsb2="You can get SimpleJS ",
+    SJ.sjsba="here."
   }else if(___i == "zh_TW"){
     SJ.sjLang="zh_TW";
     SJ.sjCU="正確的使用方式是 ";
     SJ.sjStr="字串";
     SJ.sjNum="數字";
     SJ.sjBol="布林值";
-    SJ.sjsb1: "這個網站使用了SimpleJS",
-    SJ.sjsb2: '您可以點擊下方的 " 連結 " 來下載',
-    SJ.sjsba: "SimpleJS."
+    SJ.sjsb1="這個網站使用了SimpleJS",
+    SJ.sjsb2='您可以點擊下方的 " 連結 " 來下載',
+    SJ.sjsba="SimpleJS."
   }
   onloadSJ(1);
 }
