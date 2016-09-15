@@ -31,7 +31,6 @@ function sjSet(langu){
 function onloadSJ(text){
   if(text!=1){
     $("body").html("<div id='SJsb'><h3>This website is Powered by SimpleJS.</h3></div>" + $("body").html());
-    $("#SJsb").append("<br>");
     $("#SJsb").append("<h3>You can get SimpleJS <a href='#'>here</a> .</h3>");
   }else{
     $("#SJsb").first().remove();
