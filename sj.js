@@ -54,5 +54,8 @@ onloadSJ();
 var sj = {
   say: function(text){if(text !== "!help"){alert(text);}else{alert(SJ.sjCU + '" sj.say(' + SJ.sjStr + ' / ' + SJ.sjNum +' / ' + SJ.sjBol + '); "' )}},
   question: function(text){if(text !== "!help"){prompt(text);}else{alert(SJ.sjCU + '" sj.question( ' + SJ.sjStr + ' ); "')}},
-  textNum: function(text){if(text !== "!help"){return text/1}else{alert(SJ.sjCU + '" sj.textNum( ' + SJ.sjStr + ' ); "')}}
+  confirm: function(text){if(text !== "!help"){confirm(text);}else{alert(SJ.sjCU + '" sj.confirm(' + SJ.sjStr + ' / ' + SJ.sjNum +' / ' + SJ.sjBol + '); "' )}},
+  compi: {
+    textNum: function(text){if(text !== "!help"){return text/1}else{alert(SJ.sjCU + '" sj.textNum( ' + SJ.sjStr + ' ); "')}}
+  }
 }
