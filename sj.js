@@ -10,30 +10,91 @@ var SJ={
   sjBol: "Boolean"
 }
 
-function sjSet(langu){
+function sjSet(langu, IsBS){
   var ___i = langu;
+  var ___ii = IsBS;
   if(___i == "en_US"){
     SJ.sjLang="en_US";
     SJ.sjCU="The correct instruction is ";
     SJ.sjStr="String"; 
     SJ.sjNum="Number";
     SJ.sjBol="Boolean";
-  }else if(___i == "zh_TW"){
-    SJ.sjLang="zh_TW";
-    SJ.sjCU="正確的使用方式是 ";
-    SJ.sjStr="字串";
-    SJ.sjNum="數字";
-    SJ.sjBol="布林值";
+    
+    if(___ii != true){
+      onloadSJ(1);
+    }else if(___ii == true){
+      $("body").append(
+    
+        <!-- Modal -->
+        <div class="modal fade" id="SJModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">SimpleJS</h4>
+              </div>
+              <div class="modal-body">
+                <div id='SJsb'>
+                  <h3>This website is Powered by SimpleJS.</h3>
+                  <h3>You can get SimpleJS <a href='#'>here</a> .</h3>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    }else if(___i == "zh_TW"){
+      SJ.sjLang="zh_TW";
+      SJ.sjCU="正確的使用方式是 ";
+      SJ.sjStr="字串";
+      SJ.sjNum="數字";
+      SJ.sjBol="布林值";
+      
+        if(___ii != true){
+          onloadSJ(1);
+        }else if(___ii == true){
+          $("body").append(
+      
+            <!-- Modal -->
+            <div class="modal fade" id="SJModal" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">SimpleJS</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div id='SJsb'>
+                      <h3>這個網站使用了SimpleJS,</h3>
+                      <h3>您可以點擊<a href='#'>這裡</a>來下載SimpleJS</h3>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          )
+        }
+      }
+    }
   }
-  onloadSJ(1);
-}
 
 function onloadSJ(text){
   if(text!=1){
+    $("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
     $("body").html("<div id='SJsb'><h3>This website is Powered by SimpleJS.</h3></div>" + $("body").html());
     $("#SJsb").append("<h3>You can get SimpleJS <a href='#'>here</a> .</h3>");
   }else{
     $("#SJsb").first().remove();
+    $("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
     $("body").html("<div id='SJsb'><h3>這個網站使用了SimpleJS,</h3></div>" + $("body").html());
     $("#SJsb").append("<h3>您可以點擊<a href='#'>這裡</a>來下載SimpleJS</h3>");
   }
