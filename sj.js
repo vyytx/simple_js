@@ -14,14 +14,14 @@ var SJ ={
 }
 
 function sjSet(lang){
-  if(lang == "en-us"){
-    SJ.sjLang="en-us";
+  if(lang == "en_US"){
+    SJ.sjLang="en_US";
     SJ.sjCU="The correct instruction is ";
     SJ.sjStr="String"; 
     SJ.sjNum="Number";
     SJ.sjBol="Boolean";
-  }else if(lang == "zh-tw"){
-    SJ.sjLang="zh-tw";
+  }else if(lang == "zh_TW"){
+    SJ.sjLang="zh_TW";
     SJ.sjCU="正確的使用方式是 ";
     SJ.sjStr="字串";
     SJ.sjNum="數字";
