@@ -13,14 +13,15 @@ var SJ ={
   sjsba: "here."
 }
 
-function sjSet(lang){
-  if(lang == "en_US"){
+function sjSet(langu){
+  var ___i = langu;
+  if(___i == "en_US"){
     SJ.sjLang="en_US";
     SJ.sjCU="The correct instruction is ";
     SJ.sjStr="String"; 
     SJ.sjNum="Number";
     SJ.sjBol="Boolean";
-  }else if(lang == "zh_TW"){
+  }else if(___i == "zh_TW"){
     SJ.sjLang="zh_TW";
     SJ.sjCU="正確的使用方式是 ";
     SJ.sjStr="字串";
@@ -36,12 +37,10 @@ function onloadSJ(text){
     $("#SJsb").append("<br>");
     $("#SJsb").append(SJ.sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
   }else{
-    var oooo = $("#SJsb").first();
-    oooo.id="SJsbC";
+    $("#SJsb").first().remove();
     $("body").html("<div id='SJsb'><sb>" + SJ.sjsb1 + "</sb></div>" + $("body").html());
     $("#SJsb").append("<br>");
     $("#SJsb").append(SJ.sjsb2 + "<a href='#'>" + SJ.sjsba + "</a>");
-    $("#SJsbC").remove();
   }
 }
 
