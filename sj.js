@@ -17,6 +17,7 @@ function sjSet(langu, IsBS){
     SJ.sjStr="String"; 
     SJ.sjNum="Number";
     SJ.sjBol="Boolean";
+    console.log("true");
     
     if(IsBS != "true"){
       onloadSJ(1);
