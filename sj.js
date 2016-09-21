@@ -25,9 +25,10 @@ function sjSet(langu, IsBS){
       $("#SJModal").remove();
       $("body").append('<!-- Modal --><div class="modal fade" id="SJModal" role="dialog"><div class="modal-dialog"><!-- Modal content--><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">SimpleJS</h4></div><div class="modal-body"><div id="SJsb"><h3>This website is Powered by SimpleJS.</h3><h3>You can get SimpleJS <a href="">here</a> .</h3></div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>')
       $("#SJModal").modal.show();
-    }else if(langu == "zh_TW"){
-      SJ.sjLang="zh_TW";
-      SJ.sjCU="正確的使用方式是 ";
+    }
+  }else if(langu == "zh_TW"){
+    SJ.sjLang="zh_TW";
+    SJ.sjCU="正確的使用方式是 ";
       SJ.sjStr="字串";
       SJ.sjNum="數字";
       SJ.sjBol="布林值";
@@ -41,7 +42,6 @@ function sjSet(langu, IsBS){
         }
       }
     }
-  }
 
 function onloadSJ(text){
   if(text!=1){
