@@ -24,7 +24,7 @@ function sjSet(langu, IsBS){
       document.body.id="body";
       __("#SJModal").remove();
       __("#body").append('<!-- Modal --><div class="modal fade" id="SJModal" role="dialog"><div class="modal-dialog"><!-- Modal content--><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">SimpleJS</h4></div><div class="modal-body"><div id="SJsb"><h3>This website is Powered by SimpleJS.</h3><h3>You can get SimpleJS <a href="">here</a> .</h3></div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>')
-      setTimeout(__("#SJModal").modal.show(), 10);
+      setTimeout(__("#SJModal").modal("show"), 10);
     }
   }else if(langu == "zh_TW"){
     SJ.sjLang="zh_TW";
@@ -39,7 +39,7 @@ function sjSet(langu, IsBS){
           document.body.id="body";
           __("#SJModal").remove();
           __("#body").append('<!-- Modal --><div class="modal fade" id="SJModal" role="dialog"><div class="modal-dialog"><!-- Modal content--><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">SimpleJS</h4></div><div class="modal-body"><div id="SJsb"><h3>這個網站使用了SimpleJS,</h3><h3>您可以點擊<a href="">這裡</a>來下載SimpleJS</h3></div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">關閉</button></div></div></div></div>')
-          setTimeout(__("#SJModal").modal.show(), 10);
+          setTimeout(__("#SJModal").modal("show"), 10);
         }
       }
     }
