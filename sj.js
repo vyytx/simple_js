@@ -47,12 +47,12 @@ function onloadSJ(text){
   if(text!=1){
     $("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
     $("body").html("<div id='SJsb'><h3>This website is Powered by SimpleJS.</h3></div>" + $("body").html());
-    $("#SJsb").append("<h3>You can get SimpleJS <a href='#'>here</a> .</h3>");
+    $("#SJsb").append("<h3>You can get SimpleJS <a href='main.js' target='_blank'>here</a> .</h3>");
   }else{
     $("#SJsb").first().remove();
     $("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
     $("body").html("<div id='SJsb'><h3>這個網站使用了SimpleJS,</h3></div>" + $("body").html());
-    $("#SJsb").append("<h3>您可以點擊<a href='#'>這裡</a>來下載SimpleJS</h3>");
+    $("#SJsb").append("<h3>您可以點擊<a href='main.js' target='_blank'>這裡</a>來下載SimpleJS</h3>");
   }
 }
 
@@ -64,8 +64,4 @@ var sj = {
   compi: {
     textNum: function(text){if(text !== "!help"){return text/1}else{alert(SJ.sjCU + '" sj.textNum( ' + SJ.sjStr + ' ); "')}}
   }
-}
-
-window.downloadFile = function(sUrl) {
-    window.open(sUrl);
 }
