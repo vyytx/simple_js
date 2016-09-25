@@ -17,7 +17,6 @@ function sjSet(langu, IsBS){
     SJ.sjStr="String"; 
     SJ.sjNum="Number";
     SJ.sjBol="Boolean";
-    console.log("true");
     
     if(IsBS != "true"){
       onloadSJ(1);
@@ -47,7 +46,7 @@ function onloadSJ(text){
   if(text!=1){
     __("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
     __("body").html("<div id='SJsb'><h3>This website is Powered by SimpleJS.</h3></div>" + __("body").html());
-    __("#SJsb").append("<h3>You can get SimpleJS <a href='main.js' target='_blank'>here</a> .</h3>");
+    __("#SJsb").append("<h3>You can get SimpleJS <a href='main.js' download=''>here</a> .</h3>");
   }else{
     __("#SJsb").first().remove();
     __("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
@@ -64,6 +63,9 @@ var sj = {
   converter: {
     textNum: function(text){if(text !== "!help"){return text/1;}else{console.log(SJ.sjCU + '" sj.textNum( ' + SJ.sjStr + ' ); "')}},
     numText: function(num){if(num !== "!help"){return "" + num;}else{console.log(SJ.sjCU + '" sj.numText( ' + SJ.sjNum + ' ); "')}},
-    textBol: function(text){if(text !== "!help"){if(text == "true"){return true;}else if(text == "false"){return false;}}else{console.log(SJ.sjCU + '" sj.textBol( ' + SJ.sjStr + ' ); "')}}
+    textBol: function(text){if(text !== "!help"){if(text == "true"){return true;}else if(text == "false"){return false;}}else{console.log(SJ.sjCU + '" sj.textBol( ' + SJ.sjStr + ' ); "')}},
+    bolText: function(bol){if(bol !== "!help"){if(bol == true){return "true";}else if(bol == false){return "false";}}else{console.log(SJ.sjCU + '" sj.bolText( ' + SJ.sjBol + ' ); "')}},
+    numBol: function(num){if(num !== "!help"){if(num == 1){return true;}else if(num == 0){return false;}}else{console.log(SJ.sjCU + '" sj.bolText( ' + SJ.sjNum + ' ); "')}},
+    bolNum: function(bol){if(bol !== "!help"){if(bol == true){return 1;}else if(bol == false){return 0;}}else{console.log(SJ.sjCU + '" sj.bolText( ' + SJ.sjBol + ' ); "')}}
   }
 }
