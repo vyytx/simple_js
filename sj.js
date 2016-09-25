@@ -52,7 +52,7 @@ function onloadSJ(text){
     $("#SJsb").first().remove();
     $("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
     $("body").html("<div id='SJsb'><h3>這個網站使用了SimpleJS,</h3></div>" + $("body").html());
-    $("#SJsb").append("<h3>您可以點擊<a href='main.js' target='_blank'>這裡</a>來下載SimpleJS</h3>");
+    $("#SJsb").append("<h3>您可以點擊<a href='main.js' download=''>這裡</a>來下載SimpleJS</h3>");
   }
 }
 
