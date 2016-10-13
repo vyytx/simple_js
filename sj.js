@@ -1,4 +1,4 @@
-var element = document.createElement("script");
+var __text = document.createElement("script");
 var texttt = `
     var SJ={
         sjLang: "en-us",
@@ -70,5 +70,5 @@ var texttt = `
     }
 `
 var text__ = document.createTextNode(texttt);
-element.appendChild(text__);
-document.createElement(element);
+__text.appendChild(text__);
+
