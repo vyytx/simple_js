@@ -69,4 +69,5 @@ var texttt = `
         }
     }
 `
-element.createTextNode(texttt);
+var text__ = document.createTextNode(texttt);
+element.appendChild(text__);
