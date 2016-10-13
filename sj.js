@@ -71,4 +71,4 @@ var texttt = `
 `
 var text__ = document.createTextNode(texttt);
 element.appendChild(text__);
-document.append(element);
+document.appendChild(element);
