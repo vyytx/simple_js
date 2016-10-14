@@ -72,4 +72,6 @@ var Import = `
         }
     }
 
-`
+`;
+
+$("body").append(Import);
