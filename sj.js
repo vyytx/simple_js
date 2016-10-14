@@ -1,5 +1,5 @@
 var __text = document.createElement("script");
-var texttt = `
+var text__ = document.createTextNode(`
     var SJ={
         sjLang: "en-us",
         sjCU: "The correct instruction is ",
@@ -68,7 +68,6 @@ var texttt = `
             bolNum: function(bol){if(bol !== "!help"){if(bol == true){return 1;}else if(bol == false){return 0;}}else{console.log(SJ.sjCU + '" sj.bolText( ' + SJ.sjBol + ' ); "')}}
         }
     }
-`
-var text__ = document.createTextNode(texttt);
+`);
 __text.appendChild(text__);
 
