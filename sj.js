@@ -56,7 +56,7 @@ $("body").append(`
             }
         }
 
-        onloadSJ();
+        onloadSJ("a");
         var sj = {
             say: function(text){if(text !== "!help"){alert(text);}else{console.log(SJ.sjCU + '" sj.say(' + SJ.sjStr + ' / ' + SJ.sjNum +' / ' + SJ.sjBol + '); "' )}},
             question: function(text){if(text !== "!help"){prompt(text);}else{console.log(SJ.sjCU + '" sj.question( ' + SJ.sjStr + ' ); "')}},
