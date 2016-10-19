@@ -38,13 +38,14 @@ $("body").append(`
 
         function onloadSJ(text){
             if(text == "a"){
+                $("#SJsb").first().remove();
                 $("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
-                $("body").html("<div id='SJsb'><h3>This website is Powered by SimpleJS.</h3></div>" + $("body").html());
-                $("#SJsb").append("<h3>You can get SimpleJS <a href='main.js' download=''>here</a> .</h3>");
+                $("body").html("<div id='SJsb'><h3>This website is Powered by SimpleJS.</h3> <h3>You can get SimpleJS <a href='main.js' download=''>here</a> .</h3></div> <br> <br>" + $("body").html());
+                $("#SJsb").append("");
             }else if(text == 1){
                 $("#SJsb").first().remove();
                 $("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
-                $("body").html("<div id='SJsb'><h3>這個網站使用了SimpleJS,</h3> <h3>您可以點擊<a href='main.js' download=''>這裡</a>來下載SimpleJS</h3></div>" + $("body").html());
+                $("body").html("<div id='SJsb'><h3>這個網站使用了SimpleJS,</h3> <h3>您可以點擊<a href='main.js' download=''>這裡</a>來下載SimpleJS</h3></div> <br> <br>" + $("body").html());
             }else if(text == 0){
                 $("#SJModal").remove();
                 $("body").append('<!-- Modal --><div class="modal fade" id="SJModal" role="dialog"><div class="modal-dialog"><!-- Modal content--><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">SimpleJS</h4></div><div class="modal-body"><div id="SJsb"><h3>這個網站使用了SimpleJS,</h3><h3>您可以點擊<a href="">這裡</a>來下載SimpleJS</h3></div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">關閉</button></div></div></div></div>')
