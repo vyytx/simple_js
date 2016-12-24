@@ -9,11 +9,11 @@ var SJ={
     }
 }
 
-var errAlert = {
-    say: "The correct instruction is 'sj.say(String);'",
-    ques: "The correct instruction is 'sj.ques(String);'",
-    conf: "The correct instruction is 'sj.conf(String);'",
-    converter: {
+var errAlert = [
+    say= {"The correct instruction is 'sj.say(String);'"},
+    ques= {"The correct instruction is 'sj.ques(String);'"},
+    conf= {"The correct instruction is 'sj.conf(String);'"},
+    converter= {
         txtNum: "The correct instruction is 'sj.converter.txtNum(String);'",
         numTxt: "The correct instruction is 'sj.converter.numTxt(Number);'",
         txtBol: "The correct instruction is 'sj.converter.txtBol(String);'",
@@ -21,7 +21,7 @@ var errAlert = {
         numBol: "The correct instruction is 'sj.converter.numBol(Number);'",
         bolNum: "The correct instruction is 'sj.converter.bolNum(Boolean);'"
     }
-}
+]
 
 var sj = {
     say: function(txt){alert(txt)},
