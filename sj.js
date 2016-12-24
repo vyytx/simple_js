@@ -10,9 +10,9 @@ var SJ={
 }
 
 var errAlert = [
-    say= {"The correct instruction is 'sj.say(String);'"},
-    ques= {"The correct instruction is 'sj.ques(String);'"},
-    conf= {"The correct instruction is 'sj.conf(String);'"},
+    say= {1:"The correct instruction is 'sj.say(String);'"},
+    ques= {1:"The correct instruction is 'sj.ques(String);'"},
+    conf= {1:"The correct instruction is 'sj.conf(String);'"},
     converter= {
         txtNum: "The correct instruction is 'sj.converter.txtNum(String);'",
         numTxt: "The correct instruction is 'sj.converter.numTxt(Number);'",
