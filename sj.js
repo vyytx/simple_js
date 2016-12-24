@@ -1,75 +1,38 @@
-$("body").append(`
-    <script>
-        var SJ={
-            sjLang: "en-us",
-            sjCU: "The correct instruction is ",
-            sjStr: "String",
-            sjNum: "Number",
-            sjBol: "Boolean"
-        }
+var SJ={
+    sjLang: "en-us",
+    sjCU: "The correct instruction is ",
+    sjStr: "String",
+    sjNum: "Number",
+    sjBol: "Boolean",
+    help: function(txt){
+        alert(errAlert.txt);
+    }
+}
 
-        function sjSet(langu, IsBS){
-            if(langu == "en_US"){
-                SJ.sjLang="en_US";
-                SJ.sjCU="The correct instruction is ";
-                SJ.sjStr="String"; 
-                SJ.sjNum="Number";
-                SJ.sjBol="Boolean";
+var errAlert = {
+    say: "The correct instruction is 'sj.say(String);'",
+    ques: "The correct instruction is 'sj.ques(String);'",
+    conf: "The correct instruction is 'sj.conf(String);'",
+    converter: {
+        txtNum: "The correct instruction is 'sj.converter.txtNum(String);'",
+        numTxt: "The correct instruction is 'sj.converter.numTxt(Number);'",
+        txtBol: "The correct instruction is 'sj.converter.txtBol(String);'",
+        bolTxt: "The correct instruction is 'sj.converter.bolTxt(Boolean);'",
+        numBol: "The correct instruction is 'sj.converter.numBol(Number);'",
+        bolNum: "The correct instruction is 'sj.converter.bolNum(Boolean);'"
+    }
+}
 
-                if(IsBS != "true"){
-                    onloadSJ(1);
-                }else if(IsBS == "true"){
-                    onloadSJ(0);
-                }
-            }else if(langu == "zh_TW"){
-                SJ.sjLang="zh_TW";
-                SJ.sjCU="正確的使用方式是 ";
-                SJ.sjStr="字串";
-                SJ.sjNum="數字";
-                SJ.sjBol="布林值";
-
-                if(IsBS != "true"){
-                    onloadSJ(1);
-                }else if(IsBS == "true"){
-                    onloadSJ(0);
-                }
-            }
-        }
-
-        function onloadSJ(text){
-            if(text == "a"){
-                $("#SJsb").first().remove();
-                $("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
-                $("body").html("<div id='SJsb'><h3>This website is Powered by SimpleJS.</h3> <h3>You can get SimpleJS <a href='main.js' download=''>here</a> .</h3></div> <br> <br>" + $("body").html());
-                $("#SJsb").append("");
-            }else if(text == 1){
-                $("#SJsb").first().remove();
-                $("head").append('<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">');
-                $("body").html("<div id='SJsb'><h3>這個網站使用了SimpleJS,</h3> <h3>您可以點擊<a href='main.js' download=''>這裡</a>來下載SimpleJS</h3></div> <br> <br>" + $("body").html());
-            }else if(text == 0){
-                $("#SJModal").remove();
-                $("body").append('<!-- Modal --><div class="modal fade" id="SJModal" role="dialog"><div class="modal-dialog"><!-- Modal content--><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">SimpleJS</h4></div><div class="modal-body"><div id="SJsb"><h3>這個網站使用了SimpleJS,</h3><h3>您可以點擊<a href="">這裡</a>來下載SimpleJS</h3></div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">關閉</button></div></div></div></div>')
-                $("#SJModal").modal("show")
-            }
-        }
-
-        sjSet("en_US", "false");
-
-        var sj = {
-            say: function(text){if(text !== "!help"){alert(text);}else{console.log(SJ.sjCU + '" sj.say(' + SJ.sjStr + ' / ' + SJ.sjNum +' / ' + SJ.sjBol + '); "' )}},
-            question: function(text){if(text !== "!help"){prompt(text);}else{console.log(SJ.sjCU + '" sj.question( ' + SJ.sjStr + ' ); "')}},
-            confirm: function(text){if(text !== "!help"){confirm(text);}else{console.log(SJ.sjCU + '" sj.confirm(' + SJ.sjStr + ' / ' + SJ.sjNum +' / ' + SJ.sjBol + '); "' )}},
-            converter: {
-                textNum: function(text){if(text !== "!help"){return text/1;}else{console.log(SJ.sjCU + '" sj.textNum( ' + SJ.sjStr + ' ); "')}},
-                numText: function(num){if(num !== "!help"){return "" + num;}else{console.log(SJ.sjCU + '" sj.numText( ' + SJ.sjNum + ' ); "')}},
-                textBol: function(text){if(text !== "!help"){if(text == "true"){return true;}else if(text == "false"){return false;}}else{console.log(SJ.sjCU + '" sj.textBol( ' + SJ.sjStr + ' ); "')}},
-                bolText: function(bol){if(bol !== "!help"){if(bol == true){return "true";}else if(bol == false){return "false";}}else{console.log(SJ.sjCU + '" sj.bolText( ' + SJ.sjBol + ' ); "')}},
-                numBol: function(num){if(num !== "!help"){if(num == 1){return true;}else if(num == 0){return false;}}else{console.log(SJ.sjCU + '" sj.bolText( ' + SJ.sjNum + ' ); "')}},
-                bolNum: function(bol){if(bol !== "!help"){if(bol == true){return 1;}else if(bol == false){return 0;}}else{console.log(SJ.sjCU + '" sj.bolText( ' + SJ.sjBol + ' ); "')}}
-            }
-        }
-    </script>
-
-`);
-
-
+var sj = {
+    say: function(txt){alert(txt)},
+    ques: function(txt){prompt(txt)},
+    conf: function(txt){confirm(txt)},
+    converter: {
+        txtNum: function(txt){return txt/1;},
+        numTxt: function(num){return "" + num;},
+        txtBol: function(txt){if(txt == "true"){return true}else if(txt == "false"){return false}},
+        bolTxt: function(bol){if(bol == true){return "true"}else if(bol == false){return "false"}},
+        numBol: function(num){if(num == 1){return true}else if(num == 0){return false}},
+        bolNum: function(bol){if(bol == true){return 1}else if(bol == false){return 0}}
+    }
+}
