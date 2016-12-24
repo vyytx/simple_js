@@ -22,14 +22,15 @@ var errAlert = {
 
 function jsHelp (txt){
     switch(txt){
-        case "say"
+        case "say":
             alert(errAlert.say);
             break;
-        case "say"
+        case "say":
             alert(errAlert.say);
             break;
-        default
+        default:
             alert('Unmatch!!');
+            break;
     }
 }
 
