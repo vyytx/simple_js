@@ -3,10 +3,7 @@ var SJ={
     sjCU: "The correct instruction is ",
     sjStr: "String",
     sjNum: "Number",
-    sjBol: "Boolean",
-    help: function(txt){
-        alert(errAlert.txt);
-    }
+    sjBol: "Boolean"
 }
 
 var errAlert = {
@@ -20,6 +17,19 @@ var errAlert = {
         bolTxt: "The correct instruction is 'sj.converter.bolTxt(Boolean);'",
         numBol: "The correct instruction is 'sj.converter.numBol(Number);'",
         bolNum: "The correct instruction is 'sj.converter.bolNum(Boolean);'"
+    }
+}
+
+function jsHelp (txt){
+    switch(txt){
+        case "say"
+            alert(errAlert.say);
+            break;
+        case "say"
+            alert(errAlert.say);
+            break;
+        default
+            alert('Unmatch!!');
     }
 }
 
